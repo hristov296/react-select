@@ -5,10 +5,6 @@
   "description": "A Select control built with and for ReactJS",
   "author": "Jed Watson",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/JedWatson/react-select.git"
-  },
   "dependencies": {
     "@babel/core": "^7.19.6",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
@@ -76,7 +72,6 @@
     "e2e": "concurrently --kill-others --success=first --names 'SERVER,E2E' 'yarn start:test' 'yarn test:cypress'",
     "type-check": "tsc --build packages/react-select/tsconfig.json && tsc --build packages/react-select/src/__tests__/tsconfig.json && tsc --build docs/tsconfig.json && tsc --build cypress/tsconfig.json",
     "precommit": "yarn run type-check",
-    "postinstall": "preconstruct dev && manypkg check",
     "test:cypress": "yarn test:cypress:chrome && yarn test:cypress:firefox",
     "test:cypress:chrome": "cypress run --browser chrome",
     "test:cypress:firefox": "cypress run --browser firefox",
